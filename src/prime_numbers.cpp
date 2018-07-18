@@ -3,7 +3,7 @@
 // Author      : 
 // Version     :
 // Copyright   : Your copyright notice
-// Description : prime_numbers in C++, Ansi-style
+// Description : prime_numbers in C++,
 //============================================================================
 
 #include <iostream>
@@ -60,7 +60,6 @@ int main()
 
 int counting_primes(uint64_t array[], uint64_t n)
 {
-
 	uint64_t prime_numbers = 0;
 	uint64_t z = 0;
 	uint64_t cnt = 0;
