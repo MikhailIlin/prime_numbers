@@ -10,11 +10,11 @@
 #include <cstdint>
 using namespace std;
 #define MAX_PRIME_NUMBERS 5
-int counting_primes(uint64_t [], uint64_t );// прототип функции
+int counting_primes(uint16_t [], uint16_t );// прототип функции
 
 int main()
 {
-	cout << "Prime numbers program" << endl;
+	cout << "Counting primes program" << endl;
 
 	//Пример из Википедии: Первые 500 простых чисел
 	uint16_t example [500]=
@@ -44,9 +44,9 @@ int main()
 	3259,3271,3299,3301,3307,3313,3319,3323,3329,3331,3343,3347,3359,3361,3371,3373,3389,3391,3407,3413,
 	3433,3449,3457,3461,3463,3467,3469,3491,3499,3511,3517,3527,3529,3533,3539,3541,3547,3557,3559,3571};
 
-	uint64_t array [500] = {0};
+	uint16_t array [500] = {0};
 
-	int r=counting_primes(array, MAX_PRIME_NUMBERS);
+	uint16_t r=counting_primes(array, MAX_PRIME_NUMBERS);
 	cout << "prime_numbers=" << r << endl;
 
 	//проверка на первых 500 простых числах
@@ -58,13 +58,13 @@ int main()
 	return 0;
 }
 
-int counting_primes(uint64_t array[], uint64_t n)
+int counting_primes(uint16_t array[], uint16_t n)
 {
-	uint64_t prime_numbers = 0;
-	uint64_t z = 0;
-	uint64_t cnt = 0;
+	uint16_t prime_numbers = 0;
+	uint16_t z = 0;
+	uint16_t cnt = 0;
 	uint8_t k = 0;
-	uint64_t i = 2;
+	uint16_t i = 2;
 	for (;;)
 	{
 		for (z=1; z<=i; ++z)
